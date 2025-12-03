@@ -81,6 +81,7 @@ builder.Services.AddScoped<IMusicGroupsService, MusicGroupsServiceDb>();
 builder.Services.AddScoped<IAlbumsService, AlbumsServiceDb>();
 builder.Services.AddScoped<IArtistsService, ArtistsServiceDb>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

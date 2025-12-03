@@ -60,7 +60,6 @@ CREATE ROLE IF NOT EXISTS 'dboRole';
 
 /* Grant role privileges (adjust as needed) */
 GRANT SELECT ON `sql-music`.`gstusr_vwInfoDb` TO 'gstUsrRole';
-GRANT EXECUTE ON PROCEDURE `sql-music`.`gstusr_spLogin` TO 'gstUsrRole';
 
 GRANT 'gstUsrRole' TO 'usrRole'; /* usr is also a gstusr */
 GRANT SELECT, UPDATE, INSERT ON `sql-music`.`supusr_Albums` TO 'usrRole';

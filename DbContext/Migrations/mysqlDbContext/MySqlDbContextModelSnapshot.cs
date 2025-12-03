@@ -118,32 +118,6 @@ namespace DbContext.Migrations.mysqlDbContext
                     b.ToTable("MusicGroups", "supusr");
                 });
 
-            modelBuilder.Entity("DbModels.UserDbM", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<string>("PasswordHash")
-                        .IsRequired()
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<string>("UserRole")
-                        .IsRequired()
-                        .HasColumnType("varchar(200)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users", "dbo");
-                });
-
             modelBuilder.Entity("Models.DTO.GstUsrInfoDbDto", b =>
                 {
                     b.Property<int>("NrSeededAlbums")
